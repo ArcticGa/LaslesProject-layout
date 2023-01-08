@@ -1,0 +1,93 @@
+footer {
+   width: 100%;
+   background-color: #f8f8f8;
+   ul {
+      li.mainli {
+         font-weight: 500;
+         font-size: 18px;
+         line-height: 30px;
+         color: #0B132A;
+      }
+      li>a {
+         font-size: 16px;
+         line-height: 30px;
+         color: #4F5665;
+      }
+   }
+   .footer-content {
+      padding-top: 180px;
+      padding-bottom: 40px;
+      display: flex;
+      &__info {
+         
+         width: 45%;
+         img {
+            margin-bottom: 20px;
+         }
+         p {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 30px;
+            color: #4F5665;
+            margin-bottom: 30px;
+         }
+         p.twtw {
+            font-size: 16px;
+            line-height: 30px;
+            color: #AFB5C0;
+            margin: 0;
+         }
+         .icons {
+            margin-bottom: 30px;
+            i {
+               margin-right: 20px;
+               background-color: #fff;
+               padding: 12px;
+               box-shadow: 0px 13px 18px rgba(17, 19, 35, 0.08);
+               border-radius: 100%;
+               color: #F53838;
+            }
+            i.fa-facebook {
+               margin-right: 20px;
+               padding: 12px 14px;
+            }
+         }
+      }
+      &__main {
+         width: 55%;
+         display: flex;
+         justify-content: space-between;
+      }
+   }
+}
+@media all and (max-width: 1070px) {
+   footer {
+      background-color: #f8f8f8;
+      .footer-content {
+         background-color: #f8f8f8;
+         flex-direction: column;
+         align-items: center;
+         text-align: center;
+         &__info {
+            margin-bottom: 20px;
+            .icons {
+               i::last-child {
+                  margin: 0;
+               }
+            }
+         }
+         &__main {
+            margin-bottom: 20px;
+         }
+         &__product {
+            width: 33%;
+         }
+         &__engage {
+            width: 33%;
+         }
+         &__earn-money {
+            width: 33%;
+         }
+      }
+   }
+}
